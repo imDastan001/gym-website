@@ -1,0 +1,782 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Our Team */
+.TeamBanner {
+  background-image: url("./OurTeam.Assets/anastase-maragos-9dzWZQWZMdE-unsplash.jpg");
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.TeamBanner h4 {
+  color: #fff;
+  font-size: 6rem;
+}
+
+/* Team Member */
+.featured {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-top: -50px !important;
+  margin-bottom: 90px;
+}
+
+.image-container {
+  height: 350px;
+  width: 350px;
+  margin-top: 69px;
+}
+
+.image-container img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.zoom-effect {
+  transition: transform 0.3s ease;
+}
+
+.team-member-heading {
+  margin-bottom: 10px !important;
+  padding-bottom: 0;
+}
+
+.member {
+  font-weight: bold;
+  font-size: 27px;
+  margin-top: 18px;
+  margin-bottom: 3px !important;
+}
+
+.Member-Name {
+  font-weight: bold;
+  font-size: 27px;
+  margin-top: 18px;
+}
+
+.position {
+  margin-top: 3px;
+  font-size: 22px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+/* Active zone */
+.active-zone-img {
+  height: 720px;
+  width: 850px;
+  position: relative;
+  top: -70px;
+}
+
+.active-zone {
+  background-color: #e7ebe8;
+  margin-top: 230px;
+  display: flex;
+  justify-content: start;
+  position: relative;
+}
+.active-zone-description {
+  margin-top: 170px;
+  margin-left: 60px;
+  margin-right: 20px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.active-zone-description h2 {
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.active-zone-description p {
+  font-size: 22px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+/* Breakfast */
+.Breakfast-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.breakfast-img {
+  height: 330px;
+  width: 400px;
+}
+
+.date {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.Member-Name {
+  font-size: 22px;
+  margin-top: -8px;
+}
+
+.brk-para {
+  margin-top: -10px;
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  padding: 5px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.breakfast-image-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.breakfast-image-container {
+  margin: 10px;
+  display: inline-block;
+  height: 350px;
+  width: 350px;
+}
+
+.breakfast-container img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.breakfast-container:hover img {
+  transform: scale(1.1);
+}
+
+/* FLEXIBILITY */
+.flexibility {
+  background-color: #e3ff04;
+  height: 55px;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  gap: 6rem;
+  justify-content: space-around;
+  font-size: 12px;
+  margin-top: 150px;
+}
+.flex-para {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.flexibility p {
+  font-size: 1.5rem;
+  animation: rightToLeft 10s infinite linear;
+}
+@keyframes rightToLeft {
+  to {
+    transform: translateX(calc(-100% - 6rem));
+  }
+}
+
+/* Join Our Gym */
+.ourGym {
+  background-color: black;
+  height: 360px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.gym-content {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.gym-text {
+  margin-left: 90px;
+}
+.gym-text h1 {
+  font-size: 52px;
+}
+
+.gym-text p {
+  margin-top: 14px;
+  font-size: 21px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.join-us {
+  margin-left: 270px;
+}
+
+.join-btn {
+  background-color: #e3ff04;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+/* Media queries */
+/* For Mobile */
+
+@media (max-width: 576px) {
+  .TeamBanner {
+    height: 80px;
+  }
+  .TeamBanner h4 {
+    font-size: 26px;
+  }
+
+  .featured h1 {
+    font-size: 20px;
+  }
+  .image-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-container {
+    width: 100%;
+    margin-bottom: -100px !important;
+  }
+  .image-container img {
+    height: 230px;
+    width: 230px;
+  }
+
+  .image-title .Member-Name {
+    font-size: 24px !important;
+  }
+
+  .position {
+    font-size: 18px;
+  }
+  .active-zone {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    margin-top: 50px;
+  }
+
+  .active-zone-img {
+    height: 330px;
+    width: 330px;
+    position: static;
+    top: 0;
+  }
+
+  .active-zone-description {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .active-zone-description h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .active-zone-description p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .breakfast-container {
+    font-size: 17px;
+  }
+
+  .breakfast-container h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .breakfast-image-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .breakfast-image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .breakfast-image-container img {
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .date {
+    font-size: 15px;
+  }
+
+  .image-title .Member-Name {
+    font-size: 17px !important;
+  }
+
+  .brk-para {
+    font-size: 14px;
+  }
+
+  .flexibility {
+    height: 32px;
+    margin-top: -5px;
+  }
+  .flexibility p {
+    font-size: 13px;
+  }
+  .gym-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gym-text,
+  .join-us {
+    max-width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .gym-text h1 {
+    font-size: 22px;
+  }
+
+  .gym-text p {
+    font-size: 14px;
+  }
+
+  .join-us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .join-btn {
+    height: 100px;
+    width: 110px;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+}
+
+/* Media queries */
+/* For Tablet */
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .TeamBanner {
+    height: 180px;
+  }
+  .TeamBanner h4 {
+    font-size: 50px;
+  }
+
+  .featured h1 {
+    font-size: 26px;
+  }
+  .image-gallery {
+    align-items: center;
+    margin: 5px;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .image-container img {
+    height: 200px;
+    width: 200px;
+  }
+
+  #zoom {
+    margin-top: -85px;
+  }
+
+  .member {
+    font-size: 22px !important;
+  }
+
+  .position {
+    font-size: 15px;
+  }
+  .active-zone {
+    align-items: center;
+    margin-top: -110px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .active-zone-img {
+    height: 330px;
+    width: 330px;
+    position: static;
+    top: 0;
+  }
+
+  .active-zone-description {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .active-zone-description h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .active-zone-description p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .spec-heading {
+    margin-top: 18px;
+    font-size: 15px;
+  }
+
+  progress {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .progress-item {
+    width: 75%;
+  }
+
+  .breakfast-container {
+    font-size: 17px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .breakfast-container h1 {
+    font-size: 20px;
+  }
+
+  .breakfast-image-gallery {
+    align-items: center;
+  }
+
+  .breakfast-image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .breakfast-image-container img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .date {
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: -8px;
+  }
+
+  .Member-Name {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  #brkid {
+    margin-top: -15px;
+  }
+  .brk-para {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .flexibility {
+    height: 32px;
+    margin-top: -45px;
+    width: 100%;
+  }
+  .flexibility p {
+    font-size: 13px;
+  }
+  .gym-content {
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  .gym-text,
+  .join-us {
+    max-width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .gym-text h1 {
+    font-size: 17px;
+  }
+
+  .gym-text p {
+    font-size: 13px;
+  }
+
+  .join-us {
+    width: 100%;
+    display: flex;
+  }
+
+  .join-btn {
+    height: 100px;
+    width: 110px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 230px;
+  }
+}
+
+/* Media queries */
+/* For Smaller Laptop*/
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .TeamBanner {
+    height: 250px;
+  }
+  .TeamBanner h4 {
+    font-size: 75px;
+  }
+
+  .featured {
+    justify-content: center;
+  }
+  .featured h1 {
+    font-size: 35px;
+  }
+  .image-gallery {
+    display: flex;
+    margin: 5px;
+  }
+  .image-container {
+    width: 100%;
+    justify-content: center;
+  }
+  .image-container img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .member {
+    font-size: 26px !important;
+  }
+
+  .position {
+    font-size: 18px;
+  }
+  .active-zone {
+    align-items: center;
+    position: relative;
+    margin-top: 120px;
+    padding: 5px;
+  }
+
+  .active-zone-img {
+    height: 450px;
+    position: relative;
+    margin-top: -65px;
+    width: 450px;
+    top: 0;
+  }
+
+  .active-zone-description {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .active-zone-description h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .active-zone-description p {
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .spec-heading {
+    margin-top: 18px;
+    font-size: 17px;
+  }
+
+  progress {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .progress-item {
+    width: 75%;
+    margin-top: 10px;
+  }
+
+  .breakfast-container {
+    font-size: 17px;
+    margin: 5px;
+  }
+
+  .breakfast-container h1 {
+    font-size: 28px;
+  }
+
+  .breakfast-image-gallery {
+    align-items: center;
+  }
+
+  .breakfast-image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .breakfast-image-container img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .date {
+    font-size: 15px;
+  }
+
+  .Member-Name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  .brk-para {
+    font-size: 16px;
+  }
+
+  #brkid {
+    margin-top: -18px;
+  }
+
+  .flexibility {
+    height: 38px;
+    margin-top: -5px;
+  }
+  .flexibility p {
+    font-size: 16px;
+  }
+  .gym-content {
+    align-items: center;
+  }
+
+  .gym-text,
+  .join-us {
+    max-width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .gym-text h1 {
+    font-size: 35px;
+  }
+
+  .gym-text p {
+    font-size: 18px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .join-us {
+    display: flex;
+  }
+
+  .join-btn {
+    height: 130px;
+    width: 140px;
+    border-radius: 50%;
+    font-size: 15px;
+    margin-left: 90px;
+  }
+}
+
+/* Media queries */
+/* For Larger Laptop */
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .TeamBanner {
+    height: 270px;
+  }
+  .TeamBanner h4 {
+    font-size: 85px;
+  }
+
+  .gym-content {
+    align-items: center;
+    margin-left: 70px;
+  }
+
+  .gym-text,
+  .join-us {
+    max-width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .gym-text h1 {
+    font-size: 39px;
+  }
+
+  .gym-text p {
+    font-size: 19px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .join-us {
+    display: flex;
+  }
+
+  .join-btn {
+    height: 180px;
+    width: 190px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 330px;
+  }
+}
